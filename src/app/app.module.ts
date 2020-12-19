@@ -8,6 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { WelcomeModule } from './welcome/welcome.module';
+import { DefaultModule } from './layouts/default/default.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { WelcomeModule } from './welcome/welcome.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    DefaultModule,
     WelcomeModule,
     FlexLayoutModule,
     FormsModule,
