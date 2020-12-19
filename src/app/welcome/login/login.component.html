@@ -1,0 +1,30 @@
+<section>
+  <div class="container">
+    <div id="logo">
+      <img src="../../../assets/images/logo.svg" alt="" />
+    </div>
+    <div id="form">
+      <div class="form__container">
+        <h1>Welcome to Facebook</h1>
+        <form>
+          Username:<br />
+          <mat-form-field appearance="outline">
+            <mat-label>username</mat-label>
+            <input matInput placeholder="please enter your username" />
+            <mat-icon matSuffix class="passed">check_circle</mat-icon>
+            <!-- <mat-icon matSuffix class="passed">error</mat-icon> --> </mat-form-field
+          ><br />
+          Password:<br />
+          <mat-form-field appearance="outline">
+            <mat-label>password</mat-label>
+            <input matInput placeholder="please enter your password" />
+            <mat-icon matSuffix class="passed">check_circle</mat-icon>
+            <!-- <mat-icon matSuffix class="passed">error</mat-icon> --> </mat-form-field
+          ><br />
+          <button mat-raised-button color="primary">Login</button><br /><br />
+          not a member? <a [routerLink]="['/register']">Signup now!</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

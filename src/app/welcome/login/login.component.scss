@@ -1,0 +1,50 @@
+section {
+  background-color: #4267b2;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr 8fr 0.5fr;
+  grid-template-rows: 1fr 3fr 1fr;
+
+  .container {
+    grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+
+    #logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    #form {
+      padding: 40px 50px;
+
+      .form__container {
+        width: 90%;
+        margin: auto;
+        h1 {
+          margin-bottom: 20px;
+        }
+
+        button {
+          padding: 0 2rem;
+        }
+
+        a {
+          text-decoration: none;
+          color: rgb(89, 182, 240);
+        }
+
+        .pass {
+        }
+      }
+    }
+  }
+}
