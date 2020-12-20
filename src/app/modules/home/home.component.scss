@@ -1,0 +1,41 @@
+body {
+  background-color: #fdfdfd;
+}
+
+.container {
+  margin-top: 56px;
+  width: 100vw;
+
+  .create__post {
+    width: 500px;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #c7c7c7;
+
+    h2 {
+      padding: 10px 0 0 5px;
+    }
+
+    .create__inputbox {
+      padding: 5px 5px 0 0;
+      height: 120px;
+
+      #account {
+        margin-top: 10px;
+      }
+      textarea {
+        resize: none;
+        height: 90px;
+      }
+    }
+  }
+
+  .posts {
+    width: 500px;
+    margin: 10px auto 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #c7c7c7;
+  }
+}

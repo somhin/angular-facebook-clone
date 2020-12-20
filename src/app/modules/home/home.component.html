@@ -1,1 +1,44 @@
-<p>home works!</p>
+<body>
+  <div class="container" fxLayout="column">
+    <div fxLayout="column" fxLayoutAlign="start stretch" class="create__post">
+      <h2>Create Post</h2>
+      <mat-divider> </mat-divider>
+
+      <div
+        fxLayout="row"
+        fxLayoutAlign="start stretch"
+        class="create__inputbox"
+      >
+        <div
+          fxLayout="column"
+          fxLayoutAlign="start center"
+          fxFlex="10"
+          id="account"
+        >
+          <mat-icon>account_circle</mat-icon>
+        </div>
+        <div fxLayout="column" fxFlex="90">
+          <mat-form-field>
+            <textarea matInput placeholder="What's on your mind"></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <mat-divider> </mat-divider>
+      <p>(todo) photo upload + send button</p>
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="center stretch" class="posts">
+      <!-- *ngFor to loop posts -->
+      posts goes here!
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center stretch" class="posts">
+      <!-- *ngFor to loop posts -->
+      posts with img
+      <img
+        src="https://www.denofgeek.com/wp-content/uploads/2019/11/Attack-on-Titan-Season-4-Release-Date-Trailer-News.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</body>
