@@ -1,0 +1,46 @@
+<section>
+  <div class="container" fxLayout="column">
+    <div class="logo" fxLayout="row" fxHide.lt-sm>
+      <img src="../../../assets/images/logo.svg" alt="Logo" />
+    </div>
+    <mat-divider> </mat-divider>
+    <div fxLayout="row">
+      <div fxLayout="column" fxFlex="70" fxFlex.lt-md="100" class="form">
+        <form>
+          <h1>Register an account</h1>
+          Full Name:<br />
+          <mat-form-field appearance="outline">
+            <mat-label>fullname</mat-label>
+            <input matInput placeholder="please enter your name" />
+            <mat-icon matSuffix class="passed">check_circle</mat-icon>
+            <!-- <mat-icon matSuffix class="passed">error</mat-icon> --> </mat-form-field
+          ><br />
+          Username:<br />
+          <mat-form-field appearance="outline">
+            <mat-label>username</mat-label>
+            <input matInput placeholder="please enter your username" />
+            <mat-icon matSuffix class="passed">check_circle</mat-icon>
+            <!-- <mat-icon matSuffix class="passed">error</mat-icon> --> </mat-form-field
+          ><br />
+          Password:<br />
+          <mat-form-field appearance="outline">
+            <mat-label>password</mat-label>
+            <input matInput placeholder="please enter your password" />
+            <mat-icon matSuffix class="passed">check_circle</mat-icon>
+            <!-- <mat-icon matSuffix class="passed">error</mat-icon> --> </mat-form-field
+          ><br />
+          Confirm Password:<br />
+          <mat-form-field appearance="outline">
+            <mat-label>confirm password</mat-label>
+            <input matInput placeholder="please confirm your password" />
+            <mat-icon matSuffix class="passed">check_circle</mat-icon>
+            <!-- <mat-icon matSuffix class="passed">error</mat-icon> --> </mat-form-field
+          ><br />
+          <button mat-raised-button color="primary">Register</button
+          ><br /><br />
+          Already have an account? <a [routerLink]="['/login']">Sign-in now!</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

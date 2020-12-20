@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { WelcomeModule } from './welcome/welcome.module';
 import { DefaultModule } from './layouts/default/default.module';
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './material/material.module';
@@ -20,7 +19,6 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     DefaultModule,
     SharedModule,
-    WelcomeModule,
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,

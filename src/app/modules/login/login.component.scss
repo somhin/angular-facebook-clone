@@ -48,3 +48,30 @@ section {
     }
   }
 }
+
+@media only screen and (max-width: 659px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    .container {
+      grid-area: 1/1/2/2;
+      border-radius: 0px;
+      border: none;
+
+      #form {
+        margin-top: 70px;
+        padding: 0;
+        width: 100%;
+
+        mat-form-field {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

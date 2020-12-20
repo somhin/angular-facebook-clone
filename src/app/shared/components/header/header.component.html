@@ -6,12 +6,19 @@
       >
     </div>
     <div fxLayout="row" fxLayoutGap="10px">
-      <span>user's name </span>
+      <span fxHide.lt-md>user's name </span>
       <span>user's icon</span>
+
       <mat-divider [vertical]="true"></mat-divider>
+
       <button mat-icon-button>
         <mat-icon [matMenuTriggerFor]="menu">person</mat-icon>
         <mat-menu #menu="matMenu">
+          <!-- use *nfIf user == false => display login -->
+          <button mat-menu-item routerLink="/login">
+            <mat-icon>login</mat-icon>
+            Sign in
+          </button>
           <button mat-menu-item>
             <mat-icon>exit_to_app</mat-icon>
             Sign out
