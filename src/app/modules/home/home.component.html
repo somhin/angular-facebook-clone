@@ -7,6 +7,7 @@
       <div
         fxLayout="row"
         fxLayoutAlign="start stretch"
+        fxLayoutGap="20px"
         class="create__inputbox"
       >
         <div
@@ -15,30 +16,51 @@
           fxFlex="10"
           id="account"
         >
-          <mat-icon>account_circle</mat-icon>
+          <!-- will use json to parse img file from firebase -->
+          <img
+            src="../../../assets/images/avartars/asuka.jpg"
+            class="avartar"
+          />
         </div>
         <div fxLayout="column" fxFlex="90">
-          <mat-form-field>
+          <mat-form-field appearance="none">
             <textarea matInput placeholder="What's on your mind"></textarea>
           </mat-form-field>
         </div>
       </div>
 
       <mat-divider> </mat-divider>
-      <p>(todo) photo upload + send button</p>
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+        <div fxFlex="70" class="create__tooltips">
+          <button mat-stroked-button>
+            <mat-icon>insert_photo</mat-icon> Photo/Video
+          </button>
+        </div>
+        <div fxFlex="30" fxLayoutAlign="end center" class="send_btn">
+          <button mat-raised-button color="primary">Send</button>
+        </div>
+      </div>
     </div>
 
-    <div fxLayout="column" fxLayoutAlign="center stretch" class="posts">
-      <!-- *ngFor to loop posts -->
-      posts goes here!
-    </div>
-    <div fxLayout="column" fxLayoutAlign="center stretch" class="posts">
-      <!-- *ngFor to loop posts -->
-      posts with img
-      <img
-        src="https://www.denofgeek.com/wp-content/uploads/2019/11/Attack-on-Titan-Season-4-Release-Date-Trailer-News.jpg"
-        alt=""
-      />
+    <div class="posts__container">
+      <!-- use PostComponent to render each post -->
+      <app-post
+        fxLayout="column"
+        fxLayoutAlign="center stretch"
+        class="posts"
+      ></app-post>
+
+      <!-- MOCK-UP CODE -->
+      <!-- <div fxLayout="column" fxLayoutAlign="center stretch" class="posts">
+        posts goes here!
+      </div> -->
+      <!-- <div fxLayout="column" fxLayoutAlign="center stretch" class="posts">
+        posts with img
+        <img
+          src="https://www.denofgeek.com/wp-content/uploads/2019/11/Attack-on-Titan-Season-4-Release-Date-Trailer-News.jpg"
+          alt=""
+        />
+      </div> -->
     </div>
   </div>
 </body>
