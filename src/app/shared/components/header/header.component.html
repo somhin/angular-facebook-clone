@@ -8,12 +8,15 @@
     </div>
     <div fxLayout="row" fxLayoutGap="10px">
       <span fxHide.lt-md fxLayoutAlign="end center">Asuka Langley Soryu</span>
-      <img src="../../../assets/images/avartars/asuka.jpg" class="avartar" />
 
       <mat-divider [vertical]="true"></mat-divider>
 
       <button mat-icon-button>
-        <mat-icon [matMenuTriggerFor]="menu">person</mat-icon>
+        <img
+          src="../../../assets/images/avartars/asuka.jpg"
+          class="avartar"
+          [matMenuTriggerFor]="menu"
+        />
         <mat-menu #menu="matMenu">
           <!-- use *nfIf user == false => display login -->
           <button mat-menu-item routerLink="/login">

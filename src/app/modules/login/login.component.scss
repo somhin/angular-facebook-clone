@@ -2,7 +2,7 @@ section {
   background-color: #4267b2;
   height: 100vh;
   display: grid;
-  grid-template-columns: 0.5fr 8fr 0.5fr;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr;
   grid-template-rows: 1fr 3fr 1fr;
 
   .container {
@@ -60,7 +60,6 @@ section {
       border: none;
 
       #form {
-        margin-top: 70px;
         padding: 0;
         width: 100%;
 
